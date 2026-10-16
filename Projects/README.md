@@ -33,3 +33,19 @@ FUTURE IMPROVEMENTS
 •Add timestamps to reports.
 •Log warnings to a file.
 •Explore monitoring a cloud server in AWS.
+
+
+
+## Combined System Health Report
+
+File: 'health_report.py'
+
+This Python script:
+- Checks disk usage.
+- Counts ERROR and WARNING messages in a log file.
+- Prints an overall health status.
+- Handles a missing log file.
+
+Run with:
+
+'Python3 Projects/health_report.py'
