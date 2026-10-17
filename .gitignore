@@ -2,3 +2,12 @@
 permissions-test.txt
 day2.txt
 
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+*.tf.save
