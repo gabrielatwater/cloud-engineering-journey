@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 6.0"
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.5"
     }
   }
 }
 
-provider "aws" {
-  region = "us-east-1"
+resource "local_file" "project_info" {
+  filename = "${path.module}/project-info.txt"
+  content  = "Project name: ${var.project_name}"
 }
